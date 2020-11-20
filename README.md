@@ -31,7 +31,7 @@ Alternatively, you can also
 - Enjoy your favorite theme in Roam Research
 - Dark yet colorful: easy on the eyes and clean
 - Monospace font for that hacker in you (if anyone knows how to enable the font's -- `Fira Code` -- ligatures, please let me know, thanks!)
-- Better utilization of the horizontal space in big screens thanks to a better reactive layout
+- Better utilization of the horizontal space in big screens thanks to a better responsive layout
 - Easily customizable! (see below)
 
 # Customization
