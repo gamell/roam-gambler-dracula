@@ -1,15 +1,15 @@
 /*
 
-	Author: Joan Gamell
-	URL: http://gamell.io
-	Repo: http://github.com/gamell/roam-dracula
-	License: MIT
-	Based on:
-		- Hypnos theme (https://github.com/jordanmoore/hypnos) by @jordanmoore (https://twitter.com/jordanmoore)
-		- Dracula Theme by Zeno Rocha https://draculatheme.com/
+    Author: Joan Gamell
+    URL: http://gamell.io
+    Repo: http://github.com/gamell/roam-dracula
+    License: MIT
+    Based on:
+        - Hypnos theme (https://github.com/jordanmoore/hypnos) by @jordanmoore (https://twitter.com/jordanmoore)
+        - Dracula Theme by Zeno Rocha https://draculatheme.com/
 
-	Customization instructions:
-		- You can easily change the highlight colors for headers, links and other elements inside the :root {} element
+    Customization instructions:
+        - You can easily change the highlight colors for headers, links and other elements inside the :root {} element
 
 
 */
@@ -18,69 +18,70 @@
 
     DRACULA THEME COLORS - https://draculatheme.com/
 
-    Background	    #282a36	
-    Current Line	#44475a	
-    Foreground	    #f8f8f2	
-    Comment	        #6272a4	
-    Cyan	        #8be9fd	
-    Green	        #50fa7b	
-    Orange	        #ffb86c	
-    Pink	        #ff79c6	
-    Purple	        #bd93f9	
-    Red	            #ff5555	
-    Yellow	        #f1fa8c
+    Background      #282a36 
+    Current Line    #44475a 
+    Foreground      #f8f8f2 
+    Comment         #6272a4 
+    Cyan            #8be9fd 
+    Green           #50fa7b 
+    Orange          #ffb86c 
+    Pink            #ff79c6 
+    Purple          #bd93f9 
+    Red             #ff5555 
+    Yellow          #f1fa8c
 */
 
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
 
 :root {
-	
-	/* PRIMARIES FROM DRACULA THEME */
-	--color-green: #50fa7b;
-	--color-orange: #ffb86c;
-	--color-blue: #8be9fd;
-	--color-purple: #bd93f9;
-	--color-pink: #ff79c6;
-	--color-red: #ff5555;
-	--color-yellow: #f1fa8c;
-	--color-background: #282a36;
-	--color-foreground: #f8f8f2;
-	--color-foreground-faded: #6272a4;
-	--color-foreground-faded-bright: #7a8cc4;
-	--color-background-secondary: #353848;
-	--color-background-current:#44475a;
-	--color-foreground-faded-50: rgb(98, 114, 164, .5);
-	
-	/* TRANSPARENT COLORS FOR EASILY LAYERING */
-	--color-darken-15: rgb(0,0,0,0.15);
-	--color-darken-25: rgb(0,0,0,0.25);
-	--color-brighten-3: rgb(200, 205, 230, 0.03);
-	--color-brighten-5: rgb(200, 205, 230, 0.05);
-	--color-brighten-10: rgb(200, 205, 230, 0.1);
-	--color-brighten-15: rgb(200, 205, 230, 0.15);
-	--color-brighten-25-highlight: rgba(251, 234, 0, .25);
-	--color-brighten-25: rgba(255, 255, 255, .25);
-	--color-brighten-90: rgb(200, 205, 230, 0.9);
-	--color-brighten-30: rgb(200, 205, 230, 0.3);
-	
-	/* CUSTOMIZE HIGHLIGHT COLORS HERE */
-	--color-headers: var(--color-pink);
-	--color-links: var(--color-green);
-	--color-bracket-links: var(--color-green);
-	--color-tag-links: var(--color-orange);
-	--color-code: var(--color-blue);
-	--color-other-highlights: var(--color-blue);
+    
+    /* PRIMARIES FROM DRACULA THEME */
+    --color-green: #50fa7b;
+    --color-orange: #ffb86c;
+    --color-blue: #8be9fd;
+    --color-purple: #bd93f9;
+    --color-pink: #ff79c6;
+    --color-red: #ff5555;
+    --color-yellow: #f1fa8c;
+    --color-background: #282a36;
+    --color-foreground: #f8f8f2;
+    --color-foreground-faded: #6272a4;
+    --color-foreground-faded-bright: #7a8cc4;
+    --color-background-secondary: #353848;
+    --color-background-current:#44475a;
+    --color-background-dark: #212431;
+    --color-foreground-faded-50: rgb(98, 114, 164, .5);
+    
+    /* TRANSPARENT COLORS FOR EASILY LAYERING */
+    --color-darken-15: rgb(0,0,0,0.15);
+    --color-darken-25: rgb(0,0,0,0.25);
+    --color-brighten-3: rgb(200, 205, 230, 0.03);
+    --color-brighten-5: rgb(200, 205, 230, 0.05);
+    --color-brighten-10: rgb(200, 205, 230, 0.1);
+    --color-brighten-15: rgb(200, 205, 230, 0.15);
+    --color-brighten-25-highlight: rgba(251, 234, 0, .25);
+    --color-brighten-25: rgba(255, 255, 255, .25);
+    --color-brighten-90: rgb(200, 205, 230, 0.9);
+    --color-brighten-30: rgb(200, 205, 230, 0.3);
+    
+    /* CUSTOMIZE HIGHLIGHT COLORS HERE */
+    --color-headers: var(--color-pink);
+    --color-links: var(--color-green);
+    --color-bracket-links: var(--color-green);
+    --color-tag-links: var(--color-orange);
+    --color-code: var(--color-blue);
+    --color-other-highlights: var(--color-blue);
 }
 
 /* LOADING SCREEN */
 
 #roam-loader path, #roam-loader g g g circle, #roam-loader line {
-	fill: var(--color-pink) !important;
-	stroke: var(--color-pink) !important;
+    fill: var(--color-pink) !important;
+    stroke: var(--color-pink) !important;
 }
 
 #roam-loader circle {
-	stroke: var(--color-pink) !important;
+    stroke: var(--color-pink) !important;
 }
 
 /* FONTS */
@@ -97,20 +98,20 @@ body, .level2, .level3, .level4, .level5, .level6, div, textarea, .roam-log-page
 /* TOP BAR */
 
 .rm-saving-inner-icon.rm-saving-remote {
-	background-color: var(--color-orange);
+    background-color: var(--color-orange);
 }
 
 .rm-saving-inner-icon.rm-synced {
-	background-color: var(--color-green);
+    background-color: var(--color-green);
 }
 
 .roam-topbar .bp3-input {
-	background-color: var(--color-darken-15);
-	color: var(--color-foreground-faded);
+    background-color: var(--color-darken-15);
+    color: var(--color-foreground-faded);
 }
 
 .roam-topbar .bp3-input:focus {
-	box-shadow: 0 0 0 2px var(--color-foreground-faded)
+    box-shadow: 0 0 0 2px var(--color-foreground-faded)
 }
 
 /* BODY COLOR */
@@ -153,31 +154,31 @@ body, .roam-topbar {
 
 .roam-body .roam-app textarea {
     font-weight: 500;
-	background-color: var(--color-brighten-5);
+    background-color: var(--color-brighten-5);
 }
 
 .roam-block{
-	min-height: unset;
+    min-height: unset;
 }
 
 
 /* Make the central content wider in wide screens */
 #rm-log-container, .roam-body-main > div:first-child {
-	padding-left: calc((100% - 1432px) / 2) !important;
-	padding-right: 10% !important;
+    padding-left: calc((100% - 1432px) / 2) !important;
+    padding-right: 10% !important;
 }
 
 .roam-block-container, .rm-block-text {
-	max-width: unset;
+    max-width: unset;
 }
 
 /* 2x wider than the default theme, utilizing better the horizontal space in wide screens */
 .roam-article {
-	max-width: 1300px;
+    max-width: 1300px;
 }
 
 .rm-full-width {
-	margin: 0;
+    margin: 0;
 }
 
 b,
@@ -203,11 +204,11 @@ a, a:hover, .rm-page-ref {
 
 a:hover, .rm-page-ref:hover {
     text-decoration: none;
-	border-bottom: 0.05em solid;
+    border-bottom: 0.05em solid;
 }
 
 a.bp3-menu-item:hover {
-	border: 0;
+    border: 0;
 }
 
 .rm-page-ref-brackets {
@@ -216,8 +217,8 @@ a.bp3-menu-item:hover {
 }
 
 .rm-page-ref-link-color {
-	color: var(--color-bracket-links);
-	font-weight: 500;
+    color: var(--color-bracket-links);
+    font-weight: 500;
 }
 
 .rm-page-ref {
@@ -230,7 +231,7 @@ a.bp3-menu-item:hover {
     font-style: italic;
     border-color: rgba(141, 156, 176, .2);
     transition: border-color 0.26s ease;
-  	background-color: var(--color-brighten-10)
+    background-color: var(--color-brighten-10)
 }
 .rm-block-ref:hover {
     background: none;
@@ -250,8 +251,8 @@ a.bp3-menu-item:hover {
 
 .rm-page-ref-tag:hover {
     text-decoration: none;
-	border: none;
-	opacity: 1;
+    border: none;
+    opacity: 1;
     color: var(--color-tag-links);
     background: none;
     box-shadow: inset 0 0 0 1px var(--color-tag-links);
@@ -268,11 +269,11 @@ code {
 
 /* HIGHLIGHT BLOCKS */
 .roam-highlight {
-	background-color: var(--color-brighten-25-highlight)
+    background-color: var(--color-brighten-25-highlight)
 }
 
 .block-highlight-yellow {
-	background-color: var(--color-brighten-25-highlight);
+    background-color: var(--color-brighten-25-highlight);
 }
 
 .block-highlight-blue {
@@ -282,23 +283,23 @@ code {
 /* BUTTONS */
 
 button.bp3-button {
-	color: var(--color-other-highlights) !important;
+    color: var(--color-other-highlights) !important;
 }
 
 button.bp3-button:hover {
-	background-color: var(--color-brighten-10) !important;
+    background-color: var(--color-brighten-10) !important;
 }
 
 button.bp3-button {
-	background-color: var(--color-darken-15) !important;
-	background-image: none !important;
+    background-color: var(--color-darken-15) !important;
+    background-image: none !important;
 }
 
 
 /* LEFT SIDEBAR */
 
 .roam-body .roam-app .roam-sidebar-container {
-    background-color: var(--color-darken-15);
+    background-color: var(--color-background-dark);
     border-right: 1px rgba(255, 255, 255, .06) solid;
 }
 
@@ -322,31 +323,31 @@ button.bp3-button {
     transition: all 0.16s ease;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(1n) .page {
-	color: var(--color-blue);
+    color: var(--color-blue);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(2n) .page {
-	color: var(--color-red);
+    color: var(--color-red);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(3n) .page {
-	color: var(--color-orange);
+    color: var(--color-orange);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(4n) .page {
-	color: var(--color-yellow);
+    color: var(--color-yellow);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(5n) .page {
-	color: var(--color-pink);
+    color: var(--color-pink);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(6n) .page {
-	color: var(--color-green);
+    color: var(--color-green);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(7n) .page {
-	color: var(--color-purple);
+    color: var(--color-purple);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
     background: none;
     opacity: 1;
-	font-weight: 600;
-	filter: brightness(120%);
+    font-weight: 600;
+    filter: brightness(120%);
 }
 .starred-pages-wrapper .flex-h-box span {
     color: var(--color-foreground);
@@ -361,7 +362,7 @@ button.bp3-button {
 
 
 #right-sidebar {
-	background-color: var(--color-brighten-5);
+    background-color: var(--color-brighten-5);
 }
 
 #right-sidebar > div {
@@ -369,7 +370,7 @@ button.bp3-button {
 }
 
 .rm-resize-handle {
-	z-index: unset !important;
+    z-index: unset !important;
 }
 
 
@@ -388,48 +389,48 @@ button.bp3-button {
 }
 
 .rm-inline-references {
-	background-color: var(--color-darken-25);
-	color: var(--color-foreground-faded) !important;
+    background-color: var(--color-darken-25);
+    color: var(--color-foreground-faded) !important;
 }
 
 .rm-zoom-item {
-	color: var(--color-foreground-faded-bright) !important;
+    color: var(--color-foreground-faded-bright) !important;
 }
 
 .rm-embed-container {
-	background-color: var(--color-brighten-5);
-	border: 1px solid var(--color-foreground-faded);
-	border-radius: 6px;
-	margin-left: 4px;
+    background-color: var(--color-brighten-5);
+    border: 1px solid var(--color-foreground-faded);
+    border-radius: 6px;
+    margin-left: 4px;
 }
 
 /* POPOVERS AND FILTERS */
 
 .bp3-popover .bp3-popover-content, .bp3-menu, .bp3-elevation-3 {
     background: var(--color-background-secondary) !important;
-	padding: 2px;
+    padding: 2px;
 }
 
 .bp3-popover-content {
-	color: var(--color-foreground) !important;
+    color: var(--color-foreground) !important;
 }
 
 .rm-line {
-	border-color: var(--color-brighten-15) !important;
-	background-color: var(--color-brighten-15) !important;
+    border-color: var(--color-brighten-15) !important;
+    background-color: var(--color-brighten-15) !important;
 }
 
 .bp3-datepicker {
-	background-color: inherit
+    background-color: inherit
 }
 
 .bp3-html-select select, .bp3-select select {
-	color: var(--color-foreground);
+    color: var(--color-foreground);
 }
 
 /* To overwrite the embedded style in the slash-command autocomplete highlighted row */
 [style*="background-color: rgb(213, 218, 223)"] {
-	background-color: var(--color-brighten-15) !important;
+    background-color: var(--color-brighten-15) !important;
 }
 
 /* DAILY LOG */
@@ -442,14 +443,14 @@ button.bp3-button {
 
 /* The search "selected" item is hardcoded inline so we have to do this gross and inefficient matching selector */
 .rm-find-or-create-wrapper .rm-menu-item[style*="background-color: rgb(213, 218, 223)"] {
-	background: var(--color-brighten-15) !important;
+    background: var(--color-brighten-15) !important;
 }
 .rm-find-or-create-wrapper .rm-menu-item:hover, .bp3-elevation-3 .dont-unfocus-block:hover {
     background: var(--color-brighten-15) !important;
     color: white !important;
 }
 .rm-new-page {
-	color: var(--color-green) !important;
+    color: var(--color-green) !important;
 }
 
 .bp3-menu .rm-search-title:hover {
@@ -512,7 +513,7 @@ button.bp3-button {
     box-shadow: none;
 }
 .bp3-menu, .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting, .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
-	background-color: var(--color-background) !important;
+    background-color: var(--color-background) !important;
 }
 .bp3-menu-item:hover, .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting, .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting:hover {
     background-color: var(--color-background-secondary);
@@ -540,7 +541,7 @@ button.bp3-button {
     padding: 0.8em;
     color: var(--color-other-highlights);
     font-size: 80%;
-	border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 
 
@@ -603,13 +604,13 @@ span.bp3-icon-small.bp3-icon-star {
 /* EXTRA FEATURES */
 
 button.rm-pomodoro {
-	border-color: var(--color-brighten-3);
-	background-color: var(--color-brighten-5) !important;
-	color: var(--color-red) !important;
+    border-color: var(--color-brighten-3);
+    background-color: var(--color-brighten-5) !important;
+    color: var(--color-red) !important;
 }
 
 .rm-calc-val {
-	color:var(--color-green)
+    color:var(--color-green)
 }
 
 .kanban-board {
@@ -637,7 +638,7 @@ button.rm-pomodoro {
 }
 
 .kanban-card {
-	background-color: var(--color-foreground-faded-50)
+    background-color: var(--color-foreground-faded-50)
 }
 
 
@@ -655,13 +656,13 @@ button.rm-pomodoro {
     font-weight: 600;
     font-size: 13px;
     color: var(--color-foreground);
-	opacity: 0.7;
+    opacity: 0.7;
     transition: all 0.16s ease;
     padding: 8px 27px;
-	align-items: baseline;
+    align-items: baseline;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .flex-h-box {
-	align-items: baseline;
+    align-items: baseline;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button div {
     font-size: 13px;
