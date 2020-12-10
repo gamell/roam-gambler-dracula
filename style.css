@@ -820,6 +820,10 @@ button.rm-pomodoro {
   text-align: center;
 }
 
+.rm-quick-capture-sync-modal {
+  background-color: var(--color-background);
+}
+
 /* Import CodeMirror Dracula Themes */
 /* https://raw.githubusercontent.com/codemirror/CodeMirror/master/theme/dracula.css */
 /*
