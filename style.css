@@ -299,7 +299,7 @@ code {
 }
 
 /* HIGHLIGHT BLOCKS */
-.roam-highlight {
+.rm-highlight {
   background-color: var(--color-brighten-25-highlight);
 }
 
@@ -313,6 +313,12 @@ code {
 
 .rm-zoom.zoom-path-view .rm-zoom-mask {
   background-color: var(--color-foreground-faded);
+}
+
+/* Blockquotes */
+
+.rm-bq {
+  background-color: var(--color-brighten-5);
 }
 
 /* BUTTONS */
