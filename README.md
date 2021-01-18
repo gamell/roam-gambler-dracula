@@ -36,7 +36,31 @@ Alternatively, you can also
 
 # Customization
 
-You can easily customize the colors by changing lines `66-72` of the file
+You can easily customize the colors by changing lines `66-72` of the file or, alternatively, overwriting the colors directly in your `roam/css` page. Just paste this and change the colors at will:
+
+```css
+@import url('https://gamell.io/roam-dracula/style.css');
+:root {
+  /* PRIMARIES FROM DRACULA THEME */
+  --color-green: #50fa7b;
+  --color-orange: #ffb86c;
+  --color-blue: #8be9fd;
+  --color-purple: #bd93f9;
+  --color-pink: #ff79c6;
+  --color-red: #ff5555;
+  --color-yellow: #f1fa8c;
+
+  /* CUSTOMIZE HIGHLIGHT COLORS HERE */
+  --color-headers: var(--color-yellow);
+  --color-links: var(--color-green);
+  --color-bracket-links: var(--color-green);
+  --color-tag-links: var(--color-orange);
+  --color-code: var(--color-blue);
+  --color-other-highlights: var(--color-blue);
+}
+```
+
+
 
 # Contribute
 
