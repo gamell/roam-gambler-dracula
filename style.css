@@ -270,7 +270,7 @@ a.bp3-menu-item:hover {
   border-color: rgba(141, 156, 176, 0.5);
 }
 
-.rm-page-ref-tag {
+.rm-page-ref--tag {
   color: var(--color-tag-links);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
   background: var(--color-brighten-10);
@@ -280,7 +280,7 @@ a.bp3-menu-item:hover {
   border-radius: 2px;
 }
 
-.rm-page-ref-tag:hover {
+.rm-page-ref--tag:hover {
   text-decoration: none;
   border: none;
   opacity: 1;
