@@ -13,7 +13,7 @@ Clean & dark Dracula Theme for Roam Research
 
 - Open or create your `[[roam/css]]` page in your roam instance
 - In a code block (tripple \` backticks)
-  - paste this single line: `@import url('https://gamell.io/roam-dracula/style.css');` -- this way you will automatically get any update I make to the theme, OR
+  - paste this single line: `@import url('https://gamell.io/roam-gambler-dracula/style.css');` -- this way you will automatically get any update I make to the theme, OR
   - paste the entirety of `style.css` (with your optional customizations)
 - Enjoy the theme
 
@@ -21,7 +21,7 @@ Alternatively, you can also
 
 - Install Stylus Chrome Extension
 - Create a new Style override for `roamresearch.com` and
-  - paste this single line: `@import url('https://gamell.io/roam-dracula/style.css');` -- this way you will automatically get any update I make to the theme, OR
+  - paste this single line: `@import url('https://gamell.io/roam-gambler-dracula/style.css');` -- this way you will automatically get any update I make to the theme, OR
   - paste the entirety of `style.css` (with your optional customizations)
 
 # Feartures
