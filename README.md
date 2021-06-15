@@ -1,8 +1,8 @@
-# roam-dracula
+# Gambler Dracula 🎰
 
 ![header](img/header.png)
 
-Dracula Theme for Roam Research
+Clean & dark Dracula Theme for Roam Research
 
 # Credits
 
